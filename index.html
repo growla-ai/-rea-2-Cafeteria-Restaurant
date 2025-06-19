@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Àrea 2 Cafeteria Restaurante</title>
+    <title>Área 2 Cafeteria Restaurante</title>
     <style>
         @font-face {
             font-family: 'GilroyExtraBold';
@@ -66,8 +66,8 @@
         .shaking-emoji {
             display: inline-block;
             position: relative;
-            top: 93px; /* Adjust to move up (negative, e.g., -5px) or down (positive, e.g., 5px) */
-            left: 2px; /* Adjust to move left (negative, e.g., -5px) or right (positive, e.g., 5px) */
+            top: 93px;
+            left: 2px;
             animation: smoothShake 3s ease-in-out infinite;
         }
         @keyframes smoothShake {
@@ -95,6 +95,8 @@
             text-decoration: none;
             transition: background-position 0.6s ease, box-shadow 0.3s ease, transform 0.3s ease;
             position: relative;
+            top: 10px; /* উপর-নিচে মুভ করতে এই ভ্যালু চেঞ্জ করো (পজিটিভ = নিচে, নেগেটিভ = উপরে) */
+            left: -5px; /* ডান-বামে মুভ করতে এই ভ্যালু চেঞ্জ করো (পজিটিভ = ডানে, নেগেটিভ = বামে) */
             overflow: hidden;
             box-shadow: 0 4px 12px rgba(200, 16, 46, 0.5), 0 0 15px rgba(255, 98, 0, 0.3);
             animation: gloryPulse 2s ease-in-out infinite;
@@ -191,6 +193,8 @@
                 padding: 15px 10px;
                 font-size: 16px;
                 margin: 20px auto 0;
+                top: 10px; /* মোবাইলে একই ভ্যালু রাখলাম, দরকার হলে চেঞ্জ করো */
+                left: -5px;
             }
         }
         .new-newsletter-box {
@@ -254,12 +258,12 @@
 </head>
 <body>
     <div class="top-bar">
-        Àrea 2 Cafeteria Restaurante
+        Área 2 Cafeteria Restaurante
     </div>
     <div class="content">
         <br><br><br><br><br>
-        ¡𝐂𝐨𝐧𝐯𝐢é𝐫𝐭𝐞𝐭𝐞 𝐞𝐧 𝐧𝐮𝐞𝐬𝐭𝐫𝐨 <br>
-        𝐜𝐥𝐢𝐞𝐧𝐭𝐞 𝐟𝐚𝐯𝐨𝐫𝐢𝐭𝐨 𝐝𝐞𝐥 𝐝í𝐚! <span class="shaking-emoji">🏆</span>
+       ¡Conviértete en nuestro <br>
+       cliente favorito del día! <span class="shaking-emoji">🏆</span>
         <a href="https://search.google.com/local/writereview?placeid=ChIJMwSpP0-apBIRmfgCVtMqzDU" class="review-button" style="font-size: 22px;">💬 Tu reseña cuenta</a>
     </div>
     <div class="new-newsletter-box">
@@ -272,7 +276,7 @@
         </div>
     </div>
     <footer>
-        © 2025 Café Delicia. Todos los derechos reservados.
+        2025 • Área 2 Cafetería Restaurante. Todos los derechos reservados.
     </footer>
     <script>
         document.getElementById('newEmailForm').addEventListener('submit', async function(event) {
