@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Background with Custom Font and Review Prompt</title>
+    <title>Àrea 2 Cafeteria Restaurante</title>
     <style>
         @font-face {
             font-family: 'GilroyExtraBold';
@@ -58,107 +58,116 @@
             margin: auto;
             margin-top: 60px;
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .shaking-emoji {
+            display: inline-block;
+            position: relative;
+            top: 93px; /* Adjust to move up (negative, e.g., -5px) or down (positive, e.g., 5px) */
+            left: 2px; /* Adjust to move left (negative, e.g., -5px) or right (positive, e.g., 5px) */
+            animation: smoothShake 3s ease-in-out infinite;
+        }
+        @keyframes smoothShake {
+            0%, 10% { transform: translateX(0); }
+            15% { transform: translateX(-6px) rotate(-5deg); }
+            20% { transform: translateX(6px) rotate(5deg); }
+            25% { transform: translateX(-4px) rotate(-3deg); }
+            30% { transform: translateX(4px) rotate(3deg); }
+            35% { transform: translateX(0); }
+            100% { transform: translateX(0); }
         }
         .review-button {
-    display: block;
-    padding: 15px 30px; /* Original size retained */
-    margin: 30px auto 0;
-    border: none;
-    border-radius: 25px;
-    background: linear-gradient(45deg, #c8102e, #ff6200, #ffd700, #ff6200, #c8102e); /* Vibrant gradient: deep red, fiery orange, gold */
-    background-size:350% 100%; /* Smooth gradient animation */
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    font-family: 'GilroyExtraBold', Arial, sans-serif;
-    text-decoration: none;
-    transition: background-position 0.6s ease, box-shadow 0.3s ease, transform 0.3s ease;
-    position: relative;
-    overflow: hidden; /* Contains blade and glory effects */
-    box-shadow: 0 4px 12px rgba(200, 16, 46, 0.5), 0 0 15px rgba(255, 98, 0, 0.3); /* Initial shadow with subtle glow */
-    animation: gloryPulse 2s ease-in-out infinite; /* Glory effect: pulsating glow */
-}
-
-/* Glory Effect: Pulsating halo */
-@keyframes gloryPulse {
-    0% {
-        box-shadow: 0 4px 12px rgba(200, 16, 46, 0.5), 0 0 15px rgba(255, 98, 0, 0.3);
-    }
-    50% {
-        box-shadow: 0 6px 18px rgba(200, 16, 46, 0.7), 0 0 25px rgba(255, 98, 0, 0.5), 0 0 40px rgba(255, 215, 0, 0.3); /* Radiant gold glow */
-    }
-    100% {
-        box-shadow: 0 4px 12px rgba(200, 16, 46, 0.5), 0 0 15px rgba(255, 98, 0, 0.3);
-    }
-}
-
-.review-button:hover {
-    background-position: 100% 0; /* Gradient slides */
-    transform: translateY(-3px); /* Subtle lift */
-    box-shadow: 0 8px 20px rgba(200, 16, 46, 0.8), 0 0 30px rgba(255, 98, 0, 0.6), 0 0 50px rgba(255, 215, 0, 0.4); /* Enhanced glory glow */
-    animation: none; /* Pause pulse on hover for stronger glow */
-}
-
-.review-button:active {
-    transform: translateY(0); /* Press-down effect */
-    box-shadow: 0 3px 8px rgba(200, 16, 46, 0.4); /* Reduced shadow */
-    animation: none; /* No pulse when pressed */
-}
-
-.review-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(255, 98, 0, 0.4), 0 8px 20px rgba(200, 16, 46, 0.8), 0 0 30px rgba(255, 215, 0, 0.4); /* Accessible focus with glory glow */
-}
-
-/* Enhanced Blade Animation */
-.review-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -75%;
-    width: 30%; /* Narrower for sharper blade */
-    height: 100%;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.8),
-        rgba(255, 255, 255, 0.3),
-        transparent
-    ); /* Brighter, metallic gleam */
-    transform: skewX(-15deg); /* Tighter slant for blade-like sharpness */
-    transition: left 0.4s ease-out; /* Faster animation */
-    pointer-events: none;
-}
-
-.review-button:hover::before {
-    left: 125%; /* Blade slices across quickly */
-    transition: left 0.4s ease-out, opacity 0.4s ease-out;
-}
-
-/* Second blade for extra flair */
-.review-button::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -75%;
-    width: 20%; /* Even narrower for secondary gleam */
-    height: 100%;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 215, 0, 0.6), /* Gold-tinted blade */
-        transparent
-    );
-    transform: skewX(-15deg);
-    transition: left 0.4s ease-out 0.1s; /* Slight delay for staggered effect */
-    pointer-events: none;
-}
-
-.review-button:hover::after {
-    left: 125%;
-    transition: left 0.4s ease-out 0.1s, opacity 0.4s ease-out;
-}
+            display: block;
+            padding: 15px 30px;
+            margin: 30px auto 0;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(45deg, #c8102e, #ff6200, #ffd700, #ff6200, #c8102e);
+            background-size: 350% 100%;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            font-family: 'GilroyExtraBold', Arial, sans-serif;
+            text-decoration: none;
+            transition: background-position 0.6s ease, box-shadow 0.3s ease, transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(200, 16, 46, 0.5), 0 0 15px rgba(255, 98, 0, 0.3);
+            animation: gloryPulse 2s ease-in-out infinite;
+        }
+        @keyframes gloryPulse {
+            0% {
+                box-shadow: 0 4px 12px rgba(200, 16, 46, 0.5), 0 0 15px rgba(255, 98, 0, 0.3);
+            }
+            50% {
+                box-shadow: 0 6px 18px rgba(200, 16, 46, 0.7), 0 0 25px rgba(255, 98, 0, 0.5), 0 0 40px rgba(255, 215, 0, 0.3);
+            }
+            100% {
+                box-shadow: 0 4px 12px rgba(200, 16, 46, 0.5), 0 0 15px rgba(255, 98, 0, 0.3);
+            }
+        }
+        .review-button:hover {
+            background-position: 100% 0;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(200, 16, 46, 0.8), 0 0 30px rgba(255, 98, 0, 0.6), 0 0 50px rgba(255, 215, 0, 0.4);
+            animation: none;
+        }
+        .review-button:active {
+            transform: translateY(0);
+            box-shadow: 0 3px 8px rgba(200, 16, 46, 0.4);
+            animation: none;
+        }
+        .review-button:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(255, 98, 0, 0.4), 0 8px 20px rgba(200, 16, 46, 0.8), 0 0 30px rgba(255, 215, 0, 0.4);
+        }
+        .review-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -75%;
+            width: 30%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.8),
+                rgba(255, 255, 255, 0.3),
+                transparent
+            );
+            transform: skewX(-15deg);
+            transition: left 0.4s ease-out;
+            pointer-events: none;
+        }
+        .review-button:hover::before {
+            left: 125%;
+            transition: left 0.4s ease-out, opacity 0.4s ease-out;
+        }
+        .review-button::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -75%;
+            width: 20%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 215, 0, 0.6),
+                transparent
+            );
+            transform: skewX(-15deg);
+            transition: left 0.4s ease-out 0.1s;
+            pointer-events: none;
+        }
+        .review-button:hover::after {
+            left: 125%;
+            transition: left 0.4s ease-out 0.1s, opacity 0.4s ease-out;
+        }
         footer {
             background: rgba(0, 0, 0, 0.7);
             color: white;
@@ -175,7 +184,7 @@
                 margin-top: 50px;
             }
             .top-bar {
-                font-size: clamp(26px, 1.5vw, 1px);
+                font-size: clamp(25px, 1.5vw, 1px);
                 padding: 8px 23px;
             }
             .review-button {
@@ -245,17 +254,17 @@
 </head>
 <body>
     <div class="top-bar">
-        Àrea 2 Cafeteria Restaurant
+        Àrea 2 Cafeteria Restaurante
     </div>
     <div class="content">
-       <br> <br><br><br><br>¡𝐂𝐨𝐧𝐯𝐢é𝐫𝐭𝐞𝐭𝐞 𝐞𝐧 𝐧𝐮𝐞𝐬𝐭𝐫𝐨 𝐜𝐥𝐢𝐞𝐧𝐭𝐞 𝐟𝐚𝐯𝐨𝐫𝐢𝐭𝐨 𝐝𝐞𝐥 𝐝í𝐚! 🏆
-
-       <a href="https://search.google.com/local/writereview?placeid=ChIJMwSpP0-apBIRmfgCVtMqzDU" class="review-button"style="font-size: 22px;">💬 Tu reseña cuenta</a>
+        <br><br><br><br><br>
+        ¡𝐂𝐨𝐧𝐯𝐢é𝐫𝐭𝐞𝐭𝐞 𝐞𝐧 𝐧𝐮𝐞𝐬𝐭𝐫𝐨 <br>
+        𝐜𝐥𝐢𝐞𝐧𝐭𝐞 𝐟𝐚𝐯𝐨𝐫𝐢𝐭𝐨 𝐝𝐞𝐥 𝐝í𝐚! <span class="shaking-emoji">🏆</span>
+        <a href="https://search.google.com/local/writereview?placeid=ChIJMwSpP0-apBIRmfgCVtMqzDU" class="review-button" style="font-size: 22px;">💬 Tu reseña cuenta</a>
     </div>
     <div class="new-newsletter-box">
         <div>
-            <p style="font-size: 16px;">¿𝗧𝗲 𝗴𝘂𝘀𝘁𝗮𝗻 𝗹𝗼𝘀 𝗿𝗲𝗴𝗮𝗹𝗼𝘀? 𝗗é𝗷𝗮𝗻𝗼𝘀 𝘁𝘂 𝗲𝗺𝗮𝗶𝗹. 🎁
-</p>
+            <p style="font-size: 16px;">¿𝗧𝗲 𝗴𝘂𝘀𝘁𝗮𝗻 𝗹𝗼𝘀 𝗿𝗲𝗴𝗮𝗹𝗼𝘀? 𝗗é𝗷𝗮𝗻𝗼𝘀 𝘁𝘂 𝗲𝗺𝗮𝗶𝗹. 🎁</p>
             <form id="newEmailForm" class="new-email-form">
                 <input type="email" id="newEmailInput" class="new-email-input" placeholder="example@gmail.com" required>
                 <button type="submit" id="newSubmitBtn" class="new-submit-btn">Enviar</button>
