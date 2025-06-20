@@ -41,7 +41,7 @@
             width: 100%;
             background: rgba(0, 0, 0, 0.7);
             color: white;
-            text-align: left;
+            text-align: center;
             padding: 10px 20px;
             font-family: 'Villesta', Arial, sans-serif;
             font-size: clamp(18px, 3vw, 22px);
@@ -95,8 +95,8 @@
             text-decoration: none;
             transition: background-position 0.6s ease, box-shadow 0.3s ease, transform 0.3s ease;
             position: relative;
-            top: 10px; /* উপর-নিচে মুভ করতে এই ভ্যালু চেঞ্জ করো (পজিটিভ = নিচে, নেগেটিভ = উপরে) */
-            left: -5px; /* ডান-বামে মুভ করতে এই ভ্যালু চেঞ্জ করো (পজিটিভ = ডানে, নেগেটিভ = বামে) */
+            top: 10px;
+            left: -5px;
             overflow: hidden;
             box-shadow: 0 4px 12px rgba(200, 16, 46, 0.5), 0 0 15px rgba(255, 98, 0, 0.3);
             animation: gloryPulse 2s ease-in-out infinite;
@@ -193,7 +193,7 @@
                 padding: 15px 10px;
                 font-size: 16px;
                 margin: 20px auto 0;
-                top: 10px; /* মোবাইলে একই ভ্যালু রাখলাম, দরকার হলে চেঞ্জ করো */
+                top: 10px;
                 left: -5px;
             }
         }
@@ -258,8 +258,8 @@
 </head>
 <body>
     <div class="top-bar">
-        Área 2 Cafetería Restaurante
-    </div>
+    Área 2 Cafeter<span style="font-family: Arial, sans-serif; font-size: 99%; transform: scaleX(2.0); display: inline-block; letter-spacing: 2px;">í</span>a Restaurante
+</div>
     <div class="content">
         <br><br><br><br><br>
        ¡Conviértete en nuestro <br>
